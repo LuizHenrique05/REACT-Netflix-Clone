@@ -1,0 +1,64 @@
+.movie__principal {
+    margin-bottom: 30px;
+}
+
+.movie__principal h2 {
+    margin: 0 0 0 30px;
+}
+
+.movie__area {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.movie__list {
+    transition: all ease 0.5s;
+}
+
+.movie__item {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movie__item img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.movie__item img:hover {
+    transform: scale(1);
+}
+
+.movie__leftArrow, .movie__rightArrow {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0,0,0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.movie__leftArrow {
+    left: 0;
+}
+
+.movie__rightArrow {
+    right: 0;
+}
+
+.movie__principal:hover .movie__leftArrow, .movie__principal:hover .movie__rightArrow {
+    opacity: 1;
+}
+
+@media(max-width: 760px){
+    .movie__leftArrow, .movie__rightArrow {
+        opacity: 1;
+    }
+}
